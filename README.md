@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express can provide server-side routing capability by allowing the developer to break the application into multiple request handlers for each URL and HTTP method combination. Another thing I learned is that Express is middleware which allows the developer to extend features that are already provided by the basic Express framework. For example, a developer can partition the code into smaller, more manageable modules and write custom and error handling middleware for specific route handlers.
+
 - [ ] Describe Middleware?
+
+Middleware is software that lies between an operating system and the applications that run on the OS. Middleware provides services to software applications that are beyond the capabilities of the OS. Middleware enables communication and data management between applications and other tools or databases.
 
 - [ ] Describe a Resource?
 
+A resource in Express is basically an object that a developer passes to the Express middleware. This could be the body that is required for the HTTP method. The resource could also be the object that is returned from the Express middleware. For example, a resource object is returned as a promise from the database after a HTTP request has been made to the database.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+The API can return a message, along with a status code informing the client that the requested HTTP method was in fact successful. The messages should be precise and used for error handling as well as for successful requests.
+
 - [ ] How can we partition our application into sub-applications?
+
+Express middleware allows for the larger application to be broken up into smaller modules. These modules can be divided by the type of route handlers or HTTP methods that would be requested. For example, a developer can have route handlers that handle messages placed into a separate URL and Router file that handles HTTP methods that are specific to these messages. By dividing the application into sub-applications or modules, the developer has better control and organization of the API's and route handlers.
 
 ## Minimum Viable Product
 
